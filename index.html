@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>파리바게뜨_메인</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        ul{list-style: none;}
+        img{border: 0; vertical-align: top;}
+        a{text-decoration: none; color: black;}
+/*        header영역----------------------------------*/
+        #header{
+            width: 100%; height: 90px;
+            background-color: #1111b9;
+        }
+        #header .head_align{
+            width: 1470px;
+            margin: 0 auto;
+            padding: 0px 25px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        #header .head_align .gnb{
+            overflow: hidden;
+            float: left;
+        }
+        #header .head_align .gnb li{
+            width: 94px; height: 90px;
+            padding: 0px 5px;
+            text-align: center;
+            float: left;
+            line-height: 90px;
+/*            padding-top: 30px;*/
+            font-size: 14px;
+            letter-spacing: -1px;
+            box-sizing: border-box;
+        }
+        #header .head_align .gnb li:hover{
+            border-bottom: 3px solid white;
+        }
+        #header .head_align .gnb li>a{
+            color: white; height: 90px;
+            display: block;
+        }
+        #header .head_align .gnb li .promise{
+            color: yellow;
+        }
+        #header .head_align .logo{
+            float: left;
+            line-height: 90px;
+            font-size: 28px;
+            padding: 0px 180px;
+        }
+        #header .head_align .side_menu{
+            overflow: hidden;
+            float: left;
+            margin-left: 100px;
+        }
+        #header .head_align .side_menu li{
+            width: 94px; height: 90px;
+            padding: 0px 5px;
+            text-align: center;
+            float: left;
+            line-height: 90px;
+            font-size: 14px;
+            letter-spacing: -1px;
+            box-sizing: border-box;
+        }
+        #header .head_align .side_menu li:hover{
+            border-bottom: 3px solid white;
+        }
+        #header .head_align .side_menu li>a{
+            color: white; height: 90px;
+            display: block;
+        }
+        
+        
+/*        section메인배너영역----------------------------------------*/
+    
+           
+        
+        #section .main_banner{
+            overflow: hidden;
+             margin-bottom: 180px;
+        }
+        #section .main_banner>div{
+            float: left; width: 33.3333%;
+        }
+        #section .main_banner>div img{
+            width: 100%;
+        }
+        
+/*        section프로모션영역-----------------------*/
+        #section .promotion{
+            width: 1470px; 
+            margin: 0 auto;
+            padding: 0px 25px;
+/*            margin-bottom: 50px*/
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        #section .promotion>h1{
+            margin-bottom: 50px;
+          
+        }
+        #section .promotion .promo_group>li{
+            float: left; 
+            width: 337px;
+        }
+        #section .promotion .promo_group>li:nth-child(1){
+            padding-right: 12px;
+        }
+        #section .promotion .promo_group>li:nth-child(2){
+            padding: 0px 12px;
+        }
+        #section .promotion .promo_group>li:nth-child(3){
+            padding: 0px 12px;
+        }
+        #section .promotion .promo_group>li:nth-child(4){
+            padding-left: 12px;
+        }
+        #section .promotion .promo_group>li>div>img{
+            width: 337px; height: 337px;
+            
+        }
+        #section .promotion .promo_group>li>h2{
+            font-size: 14pt;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        #section .promotion .promo_group>li>a:hover{
+            text-decoration: underline;
+        }
+/*        #section PB_STORY영역--------------------*/
+        #section .pb_story{
+            width: 1470px; height:  875px;
+            margin: 0 auto;
+            padding: 100px 25px;
+/*            margin-bottom: 50px*/
+            box-sizing: border-box;
+        }
+        #section .pb_story h1{
+            margin-bottom: 20px;
+        }
+        #section .pb_story .pb_story_group1{
+            overflow: hidden;
+        }
+        #section .pb_story .pb_story_group1>li{
+            float: left;
+            overflow: hidden;
+            width: 698px;
+            height: 373px;
+        }
+
+        #section .pb_story .pb_story_group1>li .img8{
+            float: left;
+        }
+        
+        #section .pb_story .pb_story_group1>li .box1{
+            float: left;
+            width: 337px;
+            height: 337px;
+            padding: 0px 12px;
+        }
+        #section .pb_story .pb_story_group1>li .img9{
+            float: left;
+        }
+        #section .pb_story .pb_story_group1>li .box2{
+            float: left;
+            width: 337px;
+            height: 337px;
+            padding: 0px 12px;
+        }
+        #section .pb_story .pb_story_group1>li img{
+            width: 337px;
+            height: 337px;
+            
+        }
+        #section .pb_story .pb_story_group2{
+            overflow: hidden;
+        }
+        #section .pb_story .pb_story_group2>li{
+            float: left;
+            overflow: hidden;
+            width: 698px;
+            height: 373px;
+        }
+
+        #section .pb_story .pb_story_group2>li .img10{
+            float: left;
+        }
+        
+        #section .pb_story .pb_story_group2>li .box3{
+            float: left;
+            width: 337px;
+            height: 337px;
+            padding: 0px 12px;
+        }
+        #section .pb_story .pb_story_group2>li .img11{
+            float: left;
+        }
+        #section .pb_story .pb_story_group2>li .box4{
+            float: left;
+            width: 337px;
+            height: 337px;
+            padding: 0px 12px;
+        }
+        #section .pb_story .pb_story_group2>li img{
+            width: 337px;
+            height: 337px;
+        }
+        
+/*        매거진영역----------------------------*/
+        #section .pb_magazine{
+            width: 1470px; height: 850px;
+            margin: 0 auto;
+            padding: 100px 25px;
+/*            margin-bottom: 50px*/
+            box-sizing: border-box;
+        }
+        #section .pb_magazine h1{
+            margin-bottom: 40px;
+        }
+        #section .pb_magazine .pb_magazine_group{
+            overflow: hidden;
+        }
+        #section .pb_magazine .pb_magazine_group li{
+            width: 460px; height: 570px;
+            float: left;
+            
+        }
+        
+        #section .pb_magazine .magazine1{
+            background-image: url(paris12.jpg);
+            background-size: cover;
+            margin-right: 12px;
+        }
+        #section .pb_magazine .magazine2{
+            background-image: url(paris13.jpg);
+            background-size: cover;
+            margin-right: 12px;
+            margin-left: 12px;
+        }
+        #section .pb_magazine .magazine3{
+            background-image: url(paris14.jpg);
+            background-size: cover;
+            margin-left: 4px;
+        }
+        #section .pb_magazine .pb_magazine_group p{
+            color: white;
+            padding: 0px 22px;
+            cursor: pointer;
+        }
+        #section .pb_magazine .pb_magazine_group p:hover{
+            text-decoration: underline;
+        }
+        #section .pb_magazine .pb_magazine_group p:nth-child(1){
+            font-size: 20pt;
+            font-weight: 1000;
+            padding-top: 480px;
+            margin-bottom: 10px;
+        }
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div id="header">
+       <div class="head_align">
+            <ul class="gnb">
+                <li><a href="#" class="promise">파바의 약속</a></li>
+                <li><a href="#">파바 매거진</a></li>
+                <li><a href="#">파바 스토리</a></li>
+                <li><a href="#">상품 안내</a></li>
+            </ul>
+            <h2 class="logo">PARIS BAGUETTE</h2>
+            <ul class="side_menu">
+                <li><a href="#">매장 정보</a></li>
+                <li><a href="#">주문 정보</a></li>
+                <li><a href="#">프로모션</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="section">
+        <div class="main_banner">
+            <div class="img1"><img src="paris1.jpg" alt="bann1"></div>
+            <div class="img2"><img src="paris2.jpg" alt="bann2"></div>
+            <div class="img3"><img src="paris3.jpg" alt="bann3"></div>
+        </div>
+        <div class="promotion">
+            <h1>PROMOTION</h1>
+            <ul class="promo_group">
+                <li>
+                    <div class="img4"><img src="paris4.jpg" alt="pro1"></div>
+                    <h2><a href="#" class="pro_text">💙파리생제르맹 콜라보 스페셜 굿즈 4탄
+                    파리생제르맹 카라비너 3단 우산💙</a></h2>
+                    <p><a href="#">READ MORE</a></p>
+                </li>
+                <li>
+                    <div class="img5"><img src="paris5.jpg" alt="pro2"></div>
+                    <h2><a href="#" class="pro_text">💙파바 M포인트 위크💙</a></h2>
+                    <p><a href="#">READ MORE</a></p>
+                </li>
+                <li>
+                    <div class="img6"><img src="paris6.jpg" alt="pro3"></div>
+                    <h2><a href="#" class="pro_text">💛1988 실키롱-케익💙</a></h2>
+                    <p><a href="#">READ MORE</a></p>
+                </li>
+                <li>
+                    <div class="img7"><img src="paris7.jpg" alt="pro4"></div>
+                    <h2><a href="#" class="pro_text">💙파리 올림픽💙 팀코리아 응원가자🛫</a></h2>
+                    <p><a href="#">READ MORE</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="pb_story">
+            <h1>PB STORY</h1>
+            <ul class="pb_story_group1">
+                <li>
+                    <div class="img8"><img src="paris8.jpg" alt="story1"></div>
+                    <div class="box1">
+                        <p>광고</p>
+                        <h2>뜨거운 여름에는 와르르르 파바빙수✨</h2>
+                        <p>2024-05-22</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img9"><img src="paris9.jpg" alt="story2"></div>
+                    <div class="box2">
+                        <p><a href="#">광고</a></p>
+                        <h2>☕COFFEE & CAKES 🍰커피와 파바 디저트가 만나 행복해진 마음의 소리💖(Full</h2>
+                        <p>2024-04-27</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pb_story_group2">
+                <li>
+                    <div class="img10"><img src="paris10.jpg" alt="story3"></div>
+                    <div class="box3">
+                        <p>광고</p>
+                        <h2>[V-log] 콜롬비아 가자는 말이 농담이 아니었던 건에 대하여….</h2>
+                        <p>2024-04-26</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img11"><img src="paris11.jpg" alt="story4"></div>
+                    <div class="box4">
+                        <p>광고</p>
+                        <h2>파리바게뜨 X 파리생제르맹이 선정한 Best 5 Players💙</h2>
+                        <p>2024-04-17</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="pb_magazine">
+            <h1>PB MAGAZINE</h1>
+            <ul class="pb_magazine_group">
+                <li class="magazine1">
+                    <p>챔피언십 우승 축하 이벤트</p>
+                    <p>💙파리생제르맹⚽ 프랑스 챔피언십 우승 축하 이벤트🏆</p>
+                </li>
+                <li class="magazine2">
+                    <p>LET’S PARIS</p>
+                    <p>💙LET’S PARIS💙 파바 빵 먹고, 렛츠파리!✨</p>
+                </li>
+                <li class="magazine3">
+                    <p>LET’S PARIS</p>
+                    <p>파리바게뜨 X 파리생제르맹이 선정한 Best 5 Players!</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="footer">
+        
+    </div>
+</body>
+</html>
